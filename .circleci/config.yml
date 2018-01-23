@@ -40,3 +40,13 @@ jobs:
         
       # run tests!
       - run: echo "Hey, I'm running!"
+
+
+greeting:
+  steps: 
+    - run: echo "Hello greetings"
+     filters:
+            branches:
+              only:
+                - /release/bw/.*/
+                - /hotfix/bw/.*/
